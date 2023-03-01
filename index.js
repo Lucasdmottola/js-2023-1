@@ -95,3 +95,17 @@ if (resposta1 === 's') {
 }else{
     console.log("Compre um PC");
 }
+
+function exibirTarefas() {
+    i = 0;
+    while (i < tarefas.length) {
+      console.log(`Minha tarefa ${i + 1} é: ${tarefas[i]}`);
+      i++;
+    }
+   
+  }
+
+  function adicionarTarefa() {
+    var novaTarefa2 = "Andar de bicicleta";
+    tarefas.push(novaTarefa2);
+  }
