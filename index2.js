@@ -116,7 +116,7 @@
 // let numero = 0;
 
 // while (numero < 1) {
-    
+
 //     idade = prompt("Digite sua idade: ")
 //     if (idade > 18) {
 //         console.log("Você é maior de idade!");
@@ -124,6 +124,52 @@
 //     }else{
 //         console.log("Digite uma idade valida");
 //     }
-    
+
 // } 
 
+// --------------------------------------------
+// ATIVIDADE 1
+
+// for (let index = 0; index < 101; index++) {
+
+//     if (index % 2 === 0) {
+//         console.log(index);
+//     }
+
+// }
+
+// for (let index = 0; index < 101; index++) {
+
+//     if (index % 2 !== 0) {
+//         console.log(index);
+//     }
+
+// }
+
+// let numero = prompt("Digite um numero")
+
+// if (numero > 1) {
+//     for (let index = 0; index <= numero; index++) {
+//       console.log(index);        
+//     }
+// }
+
+// let numero = prompt("Digite um numero: ")
+
+// for (let index = 0; index <= numero; index++) {
+//     if (index % 5 == 0) {
+//         console.log(index);
+//     }    
+// }
+
+// let numero = 0
+
+// while (numero < 1) {
+//     let nota = prompt("Digite uma nota: ")
+//     if (nota >= 0 && nota <= 10) {
+//         console.log("Nota valida");
+//         numero++
+//     } else {
+//         console.log("Nota invalida");
+//     }
+// }
