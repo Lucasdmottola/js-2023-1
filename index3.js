@@ -48,7 +48,7 @@
 // let produtos = []
 
 // for (let index = 0; index < 5; index++) {
-    
+
 //     let nome = prompt("Nome do produto")
 //     let preco = prompt("Preço do produto")
 //     let qtd = prompt("Qtd do produto")
@@ -60,18 +60,18 @@
 //     ]
 
 //     produtos.push(nome)
-    
+
 // }
 
 // console.log(produtos);
 
-let usuarios = []
+// let usuarios = []
 
 
 // Adicionar um elemento no final do array
-usuarios.push("Danielle")
+// usuarios.push("Danielle")
 
-console.log(usuarios);
+// console.log(usuarios);
 
 // Remove o ultimo elemento
 // usuarios.pop()
@@ -80,8 +80,136 @@ console.log(usuarios);
 // usuarios.shift()
 
 // Adiciona um elemento no primeiro index do array
-usuarios.unshift("Sanderson")
+// usuarios.unshift("Sanderson")
 
-console.log(usuarios)
+// console.log(usuarios)
+
+// Primeira questão da atividade
+// let numeros = []
+
+// for (let index = 0; index < 5; index++) {
+//     let num = prompt("Digite seu numero: ")
+//     numeros.push(num)
+// }
+
+// console.log(numeros);
+
+// Segunda questão
+// for (let index = 0; index < numeros.length; index++) {
+//     console.log(numeros[index]);
+// }
+
+// let produto = [
+//     "Caneta",
+//     2.5,
+//     10
+// ]
+
+// produto[1] = 2
+
+// produto.push(produto[1] * produto[2])
+
+// console.log(produto);
+
+// produto.pop()
+
+// console.log(produto);
+
+// OBJETOS
+
+// let usuarios = []
+
+// let usuario = {
+//     nome: "Allan",
+//     idade: 23,
+//     sexo: "M",
+//     CNH: true
+// }
+
+// usuarios.push(usuario)
+
+// usuario = {
+//     nome: "Everton",
+//     idade: 25,
+//     sexo: "M",
+//     CNH: false
+// }
+
+// console.log(usuario.nome);
+
+// usuarios.push(usuario)
+
+// console.log(usuarios[1].nome);
 
 
+// let produtos = []
+
+// let produto = {
+//     nome: "Caneta",
+//     preco: 2.5,
+//     qtd: 10
+// }
+
+// produtos.push(produto)
+
+// produtos[0].total = produtos[0].preco * produtos[0].qtd
+
+// console.log(produtos);
+
+// delete produtos[0].total
+
+// console.log(produtos);
+
+// let pessoas = {
+//     info: [
+//         {
+//             nome: "Everton",
+//             idade: 25,
+//             CNH: true
+//         },
+//         {
+//             nome: "Gabe",
+//             idade: 24,
+//             CNH: false
+//         },
+//         {
+//             nome: "Joao",
+//             idade: 27,
+//             CNH: true
+//         }
+//     ]
+// }
+
+// for (let index = 0; index < pessoas.info.length; index++) {
+    
+//     console.log(pessoas.info[index].nome);
+
+// }
+
+
+
+
+// console.log(pessoas);
+
+let produtos = [
+    {
+        nome: "Caneta",
+        fabricante: "Bic"
+    },
+    {
+        nome: "Lapis",
+        fabricante: "Faber"
+    }
+]
+
+console.log(produtos);
+
+for (let index = 0; index < produtos.length; index++) {
+    
+    console.log(produtos[index].fabricante);
+
+    delete produtos[index].fabricante
+    
+}
+
+console.log(produtos);
