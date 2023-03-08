@@ -204,12 +204,20 @@ let produtos = [
 
 console.log(produtos);
 
+// for (let index = 0; index < produtos.length; index++) {
+    
+//     console.log(produtos[index].fabricante);
+
+//     delete produtos[index].fabricante
+    
+// }
+
+delete produtos[1].fabricante
+
 for (let index = 0; index < produtos.length; index++) {
     
-    console.log(produtos[index].fabricante);
+    console.log(produtos[index].fabricante || "Não existe");
 
-    delete produtos[index].fabricante
-    
 }
 
 console.log(produtos);
