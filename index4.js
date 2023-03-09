@@ -30,12 +30,54 @@ let carrinho = {
 
 function adicionarProduto(nome, qtd, preco) {
     carrinho.produtos.push({nome, qtd, preco})
-    exibirCarrinho()
+    // exibirCarrinho()
 }
 
 function exibirCarrinho() {
     console.log(carrinho);
 }
+
+function exibirQtd() {
+    let qtdItens = 0;
+
+    // for (let index = 0; index < carrinho.produtos.length; index++) {
+    //         qtdItens += carrinho.produtos[index].qtd    
+    // }
+
+    carrinho.produtos.map(produto => {
+        qtdItens += produto.qtd;
+        console.log(produto.qtd)
+    })
+
+    console.log(qtdItens);
+}
+
+function buscarProduto(nomeDoProduto) {
+
+        // Retorna o primeiro objeto que a condição seja True
+        let resultado = carrinho.produtos.find(
+            produto => produto.nome === nomeDoProduto
+        )
+
+        // Retorna todos os objetos que a condição seja True
+        // let resultado = carrinho.produtos.filter(
+        //     produto => produto.qtd === 13
+        // )
+
+        console.log(resultado);
+}
+
+function totalPreco() {
+    let total = 0
+
+    for (let index = 0; index < carrinho.produtos.length; index++) {
+       total += carrinho.produtos[index].qtd * carrinho.produtos[index].preco
+    }
+
+    console.log(total);
+}
+
+
 
 // exibirMsg("Everton")
 // exibirMsg("Enzo")
