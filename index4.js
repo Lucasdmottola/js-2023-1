@@ -84,12 +84,12 @@ function listaDeNomes() {
 }
 
 function menorQue80() {
-    let retorno = carrinho.produtos.filter(
+    let retornos = carrinho.produtos.filter(
         produto => produto.preco < 80
     )
 
-    retorno.map(info => {
-        console.log(info.nome);
+    retornos.map(retorno => {
+        console.log(retorno.nome);
     })
 }
 
