@@ -77,6 +77,22 @@ function totalPreco() {
     console.log(total);
 }
 
+function listaDeNomes() {
+    carrinho.produtos.map(produto => {
+        console.log(produto.nome)
+    })
+}
+
+function menorQue80() {
+    let retorno = carrinho.produtos.filter(
+        produto => produto.preco < 80
+    )
+
+    retorno.map(info => {
+        console.log(info.nome);
+    })
+}
+
 
 
 // exibirMsg("Everton")
