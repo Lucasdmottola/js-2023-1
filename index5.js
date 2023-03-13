@@ -35,11 +35,11 @@
 
 class Carrinho {
 
-    constructor(){
+    constructor(paramFrete){
         this.produtos = []
-        this.frete = 5
+        this.frete = paramFrete
         this.subtotal = 0
-        this.total = 5
+        this.total = this.frete
     }
 
     adicionarProduto(nome, qtd, preco){
@@ -53,6 +53,11 @@ class Carrinho {
             this.subtotal += this.produtos[index].preco * this.produtos[index].qtd
             
         }
+        this.calcularTotal()
+    }
+
+    calcularTotal(){
+        this.total = this.frete + this.subtotal
     }
 
     exibirTotal(){
@@ -61,5 +66,5 @@ class Carrinho {
 
 }
 
-let meuCarrinho = new Carrinho()
+let meuCarrinho = new Carrinho(8)
 
