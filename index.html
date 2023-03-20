@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
 
-    </style>
-  </head>
-  <body>
-    <p id="texto"></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .centralizar {
+      display: flex;
+      justify-content: space-around; 
+    }
+  </style>
+</head>
 
-    <script src="revisao.js"></script>
-  </body>
+<body>
+  <form action="">
+    <div>
+      <label for="">Nome</label>
+      <input type="text" name="nome" id="inputNome">
+    </div>
+    <div>
+      <label for="">Idade</label>
+      <input type="number" name="idade" id="inputIdade">
+    </div>
+    <div>
+      <button id="cadastro">Cadastrar Cliente</button>
+    </div>
+  </form>
+  <hr>
+  <h5>Lista de Clientes</h5>
+  <div id="clientes"></div>
+
+
+  <script src="dom.js"></script>
+</body>
+
 </html>
